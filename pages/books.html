@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Books</title>
+    <link rel="stylesheet" href="../src/global.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+     .card-header {
+  background-color: var(--primary-color);
+  font-weight: bold;
+  color: white;
+}
+
+.btn{
+    background-color: rgb(99, 66, 22);
+    border-radius: 16px;
+    border: none;  
+}
+
+.learnmore{
+  bottom: 0px;  
+  text-align: center;
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+}
+
+    </style>
+  </head>
+  <body class="books">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto logo">
+          <img src="../images/logo.svg" alt="Logo" width="100px" />
+        </div>
+
+        <div class="col">
+          <nav class="nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bio.html">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="books.html">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    <div class="books-container">
+      <div class="card book-card">
+        <div class="card-header">The Cry of a New Birth</div>
+        <img
+          src="../images/book-1.jpg"
+          alt="Book Image 1"
+          class="card-img-top book-image"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Read for a good laugh over a cup of hot chocolate on a cool and uneventful evening.
+          </p>
+          <br>
+          <div class="learnmore"><a href="https://store.okadabooks.com/book/about/the_cry_of_a_new_birth/30251" class="btn btn-primary">Learn More</a></div>
+        </div>
+      </div>
+
+      <div class="card book-card">
+        <div class="card-header">La Femme Africaine</div>
+        <img
+          src="../images/book-2.jpg"
+          alt="Book Image 2"
+          class="card-img-top book-image"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            In the quest for gender equality, the pain of a typical African woman being elaborated all in one setting.
+          </p>
+           <div class="learnmore"><a href="https://store.okadabooks.com/book/about/la_femme_africaine_lipfest18-_adult_only_18%2B_-_adult_only_18%2B/23460" class="btn btn-primary">Learn More</a></div>
+        </div>
+      </div>
+
+  
+      <div class="card book-card">
+        <div class="card-header">Life Like a Game of Bounce</div>
+        <img
+          src="../images/book-3.jpg"
+          alt="Book Image 3"
+          class="card-img-top book-image"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            A book that reveals the effect of a difference in mindset with respect to the above theme. It is a self help book that turns the depressed into the motivated
+          </p>
+           <div class="learnmore"><a href="link-to-book3" class="btn btn-primary">Learn More</a>
+        </div>
+          </div>
+      </div>
+
+     
+      <div class="card book-card">
+        <div class="card-header">Scars to her Beautiful</div>
+        <img
+          src="../images/book-4.jpg"
+          alt="Book Image 4"
+          class="card-img-top book-image"
+        />
+        <div class="card-body">
+          <p class="card-text">
+            Description of Book 4. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+          <br><br>
+          <div class="learnmore"><a href="https://publish.okadabooks.com/publications" class="btn btn-primary">Learn More</a>
+      </div>
+          </div>
+      </div>
+
+    </div>
+
+      <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var bookCards = document.querySelectorAll('.book-card');
+    bookCards.forEach(function (card) {
+              card.addEventListener('click', function () {
+          var details = card.querySelector('.card-details');
+          details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+    });
+
+    function navigate(section) {
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.classList.remove("active");
+  });
+
+  section.classList.add("active");
+
+  console.log(`Navigating to ${section.textContent}`);
+}
+
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", function () {
+    navigate(this);
+  });
+});
+  </script>
+  </body>
+</html>

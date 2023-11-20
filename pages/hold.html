@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proofreading & Editing Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+
+      h1 {
+        color: #4caf50;
+        text-align: center;
+      }
+
+      .portfolio-container {
+        width: 80%;
+        margin: 20px auto;
+        overflow: hidden;
+      }
+
+      .before-after-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      }
+
+      .example {
+        flex: 0 0 50%;
+        scroll-snap-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .contact-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+        margin: 40px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Proofreading & Editing Portfolio</h1>
+
+    <div class="portfolio-container">
+      <div class="before-after-container">
+        <div class="example">
+          <h2>Before</h2>
+          <img src="before_example.jpg" alt="Before Example" />
+        </div>
+        <div class="example">
+          <h2>After</h2>
+          <img src="after_example.jpg" alt="After Example" />
+        </div>
+      </div>
+    </div>
+
+    <a href="#contact" class="contact-btn">Contact Me</a>
+  </body>
+</html>

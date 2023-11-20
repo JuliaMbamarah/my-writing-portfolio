@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/global.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+      }
+
+      .contact-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+      }
+
+      .btn {
+        background-color: white;
+        border: 1px solid white;
+        color: black;
+        border-radius: 12px;
+      }
+
+      .center-btn {
+        text-align: center;
+      }
+
+      .form-group label {
+        color: white;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      h2 {
+        color: #333;
+      }
+
+      p {
+        color: #666;
+      }
+
+      .service {
+        margin-bottom: 20px;
+      }
+
+      .see-more-btn {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+
+      .see-more-btn:hover {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid var(--primary-color);
+      }
+
+      @media (max-width: 576px) {
+        label {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto logo">
+          <img src="../images/logo.svg" alt="Logo" width="100px" />
+        </div>
+        <div class="col">
+          <nav class="nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bio.html">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="service">
+      <h3>Biographies</h3>
+      <p>
+        Professional biographies crafted to highlight your achievements and
+        experiences.
+      </p>
+      <a href="services/biography.html" class="see-more-btn">See more</a>
+    </div>
+    <br />
+    <div class="service">
+      <h3>Blogpages/Articles</h3>
+      <p>Engaging and informative blog articles tailored to your audience.</p>
+      <a href="../pages/blog.html" class="see-more-btn">See more</a>
+    </div>
+    <br />
+    <div class="service">
+      <h3>Website</h3>
+      <p>
+        Customized website content to showcase your brand and captivate
+        visitors.
+      </p>
+      <a href="../pages/blog.html" class="see-more-btn">See more</a>
+    </div>
+    <br />
+    <div class="service">
+      <h3>Copywriting</h3>
+      <p>Compelling copy that persuades and converts your target audience.</p>
+      <a href="../pages/blog.html" class="see-more-btn">See more</a>
+    </div>
+    <br />
+    <div class="service">
+      <h3>Ghostwriting</h3>
+      <p>
+        Anonymous writing services to bring your ideas to life without the
+        spotlight.
+      </p>
+      <a href="services/ghostwriting.html" class="see-more-btn">See more</a>
+    </div>
+    <br />
+    <div class="service">
+      <h3>Research Writing</h3>
+      <p>
+        In-depth research and analysis presented in a clear and concise manner.
+      </p>
+      <a href="services/research.html" class="see-more-btn">See more</a>
+    </div>
+    <br />
+    <div class="service">
+      <h2>Proofreading/Editing</h2>
+      <p>
+        Thorough proofreading and editing to enhance the clarity and quality of
+        your content.
+      </p>
+      <a href="services/proofread.html" class="see-more-btn">See more</a>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var inputs = document.querySelectorAll("input, textarea");
+
+        inputs.forEach(function (input) {
+          input.addEventListener("input", function () {
+            var label = document.querySelector('label[for="' + input.id + '"]');
+            if (label) {
+              label.style.display = input.value.length > 0 ? "none" : "block";
+            }
+          });
+        });
+      });
+
+      function navigate(section) {
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        section.classList.add("active");
+
+        console.log(`Navigating to ${section.textContent}`);
+      }
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          navigate(this);
+        });
+      });
+    </script>
+  </body>
+</html>

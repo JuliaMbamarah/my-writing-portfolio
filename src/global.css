@@ -1,0 +1,118 @@
+:root {
+  --primary-color: rgb(152, 104, 44);
+}
+
+.nav-pills .nav-item .nav-link.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.nav-pills .nav-link {
+  color: black;
+}
+
+.nav-pills .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.logo {
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.flex-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+
+.profile-image {
+  width: 110%;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+}
+
+.rightdiv {
+  font-size: 30px;
+}
+
+.leftdiv {
+  width: 30%;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+}
+
+.bio-card {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--primary-color);
+  margin-top: -8px;
+}
+
+.bio-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.bio-content h2 {
+  color: var(--primary-color);
+}
+
+.bio-content p {
+  font-size: medium;
+}
+
+.bio {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.books {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.books-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book-card {
+  width: 100%;
+  max-width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.book-image {
+  width: 100%;
+  border-radius: 0;
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to My Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/global.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa;
+        color: #343a40;
+      }
+
+      .blog-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px var(--primary-color);
+        margin-top: 30px;
+      }
+
+      .category-card {
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+
+      .category-image {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .btn {
+        background-color: rgb(99, 66, 22);
+        border-radius: 16px;
+        border: none;
+        color: #fff;
+      }
+
+      .btn:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto logo">
+          <img src="../images/logo.svg" alt="Logo" width="100px" />
+        </div>
+
+        <div class="col">
+          <nav class="nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bio.html">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="blog.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-container">
+      <h2>Welcome to My Blog</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card category-card">
+            <img
+              src="blog/health/imgs/wellness.jpg"
+              alt="Health and Wellness"
+              class="card-img-top category-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Health and Wellness</h5>
+              <p class="card-text">
+                Explore articles on health and wellness to lead a balanced life.
+              </p>
+              <br />
+              <a href="../pages/blog/health/health.html" class="btn">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card category-card">
+            <img
+              src="blog/productivity/imgs/productivity.jpg"
+              alt="Productivity"
+              class="card-img-top category-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Productivity</h5>
+              <p class="card-text">
+                Boost your productivity with helpful tips and strategies.
+              </p>
+              <br />
+              <a href="../pages/blog/productivity/productivity.html" class="btn"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card category-card">
+            <img
+              src="blog/finance/imgs/finance.jpg"
+              alt="Finance and Investments"
+              class="card-img-top category-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Finance and Investments</h5>
+              <p class="card-text">
+                Learn about financial management and investment opportunities.
+              </p>
+              <a href="../pages/blog/finance/finance.html" class="btn"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card category-card">
+            <img
+              src="blog/realestate/imgs/realestate.jpg"
+              alt="Real Estate"
+              class="card-img-top category-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Real Estate</h5>
+              <p class="card-text">
+                Discover insights and trends in the real estate industry.
+              </p>
+              <a href="../pages/blog/realestate/realestate.html" class="btn"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card category-card">
+            <img
+              src="blog/marketing/imgs/marketing.jpg"
+              alt="Marketing"
+              class="card-img-top category-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Marketing</h5>
+              <p class="card-text">
+                Stay updated with the latest marketing strategies and trends.
+              </p>
+              <a href="../pages/blog/marketing/marketing.html" class="btn"
+                >Explore</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function navigate(section) {
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        section.classList.add("active");
+
+        console.log(`Navigating to ${section.textContent}`);
+      }
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          navigate(this);
+        });
+      });
+    </script>
+  </body>
+</html>

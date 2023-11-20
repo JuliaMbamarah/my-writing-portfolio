@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../../src/global.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa; /* Light gray background color */
+        color: #343a40;
+      }
+
+      .btn {
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 12px;
+        color: white;
+      }
+
+      .btn:hover {
+        background-color: white;
+        border: 1px solid var(--primary-color);
+        border-radius: 12px;
+        color: black;
+      }
+
+      /* Stylish container for blog content */
+      .blog-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff; /* White background color */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+        margin-top: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      /* Stylish card for each blog entry */
+      .blog-entry-card {
+        margin-bottom: 20px;
+      }
+
+      /* Circular blog entry image */
+      .blog-entry-image {
+        width: 100%;
+        border-radius: 8px; /* Rounded corners */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto logo">
+          <img src="../../../images/logo.svg" alt="Logo" width="100px" />
+        </div>
+
+        <div class="col">
+          <nav class="nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../../../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../../blog.html">Blogs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <h2>Real Estate Blog</h2>
+    <!-- Blog container -->
+    <div class="blog-container">
+      <!-- Blog entries -->
+      <div class="row">
+        <!-- Blog Entry 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card blog-entry-card">
+            <img
+              src="imgs/rentingtip.jpg"
+              alt="Blog Entry 1"
+              class="card-img-top blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Tips for Finding a Good Apartment for Rent
+              </h5>
+              <p class="card-text">
+                Finding a good apartment or house to rent may be difficult and
+                ...
+              </p>
+              <a href="articles/Tips.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Entry 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card blog-entry-card">
+            <img
+              src="imgs/tips.jpg"
+              alt="Blog Entry 2"
+              class="card-img-top blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Renting Tips for Renters</h5>
+              <p class="card-text">
+                Lots of young adults will make their first move into a rented
+                home or...
+              </p>
+              <a href="articles/rentingtips.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Entry 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card blog-entry-card">
+            <img
+              src="imgs/common.jpg"
+              alt="Blog Entry 3"
+              class="card-img-top blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Common Landlord-Tenant Problems and How to Fix Them
+              </h5>
+              <p class="card-text">
+                It's not uncommon for tension to arise between tenants and ...
+              </p>
+              <a href="articles/landlord.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

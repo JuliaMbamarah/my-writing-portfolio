@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biograpy</title>
+    <link rel="stylesheet" href="../../src/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+
+      h1 {
+        color: var(--primary-color);
+        text-align: center;
+      }
+
+      .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      .portfolio-entry {
+        width: 30%;
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .portfolio-entry:hover {
+        transform: scale(1.05);
+      }
+
+      h2 {
+        color: rgb(152, 104, 44);
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: #666;
+      }
+
+      .contact-btn {
+        background-color: rgb(152, 104, 44);
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+        margin: 40px auto;
+      }
+
+      .contact-btn:hover {
+        background-color: white;
+        color: var(--primary-color);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 20px;
+        display: block;
+        margin: 40px auto;
+        border: 1px solid var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto logo">
+          <img src="../../images/logo.svg" alt="Logo" width="100px" />
+        </div>
+
+        <div class="col">
+          <nav class="nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../../pages/services.html"
+                  >Services</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <h1>Research Portfolio</h1>
+
+    <div class="portfolio-container">
+      <div class="portfolio-entry" onclick="toggleContent('abstract1')">
+        <h2>Artificial Neural Networks</h2>
+        <div id="abstract1" class="abstract-content">
+          <h1>Introduction</h1>
+
+          <p>
+            The problem with production today is the inability to recover an
+            optimal amount of the discovered resource. From statistical
+            analysis, only about 60% of oil is recoverable, and the highest
+            amount recorded so far is only 80% of the discovered oil. That is to
+            say that about 25% of oil still exists in oil field wells that have
+            been abandoned.
+          </p>
+
+          <p>
+            Obtaining data from various oil fields in Canada, the I.O.I.P was
+            computed using Deep learning. The network was trained to predict the
+            given volume of oil initially in place. A sensitivity analysis of
+            the neural network model generated revealed which input parameters
+            contributed majorly to estimating the I.O.I.P.
+          </p>
+
+          <p>
+            From the information deduced, an Ideal well would be one whose
+            determinant factors are minimized or maximized according to
+            parameter alteration feasibility. The Prototype was optimized by
+            improving the determinant properties of interest. A data update
+            subsequently led to further training and an improvement in the
+            degree of recovery attainable.
+          </p>
+
+          <p>
+            Inasmuch as other energy sources are being identified, oil and gas
+            still remain an integral part of the energy industry, and steps to
+            ensure that recovery of this energy source is optimized to the
+            greatest percentage must not be neglected.
+          </p>
+
+          <h2>Problem Statement</h2>
+
+          <p>
+            Several properties of a reservoir, a few of which are the porosity,
+            permeability, compressibility, and saturation, are used to make
+            analysis through calculations, correlations, graphical
+            representation, etc, and to subsequently draw conclusions hence
+            establishing new attributes to the reservoir. These core properties
+            of the reservoir are obtained through Core analysis and Wireline
+            logging. These are both data collection procedures that enable data
+            to be extracted from the reservoir.
+          </p>
+
+          <p>
+            There are certain mathematical methods that have been used in the
+            past, some of which are still in use to establish relationships
+            between several data variable types and to establish new dependent
+            variables in the form of information. In Reservoir Engineering,
+            several correlations have been developed for various purposes
+            ranging from the determination of a reservoir’s bubble point
+            pressure to the critical properties of the reservoir. Algebraic
+            Equations in the form of Volumetric equations and Material Balance
+            equations have also been developed and assigned for estimating some
+            properties of the reservoir.
+          </p>
+
+          <footer>
+            <p>&copy; 2023 Julia Mbamarah</p>
+          </footer>
+        </div>
+      </div>
+
+      <div class="portfolio-entry" onclick="toggleContent('abstract2')">
+        <h2>OPEC as a Global Business Influencer</h2>
+        <div id="abstract2" class="abstract-content">
+          <h1>History of OPEC</h1>
+
+          <p>
+            In 1960, during the time of decolonization and creation of many new
+            independent states across the developing world, government officials
+            from the five founding countries of OPEC met at the Baghdad
+            conference held from 10th-14th of September, to discuss strategies
+            to secure the best price of crude oil available for major oil
+            corporations. This was in response to the MOC unilateral action of
+            cutting down oil prices. Its headquarters was originally set up in
+            Geneva, Switzerland, but after five years, the location was changed
+            to Vienna, Austria. The five founding countries of OPEC in 1960
+            include: Iraq, Iran, Venezuela, Kuwait, and Saudi Arabia.
+          </p>
+
+          <h2>Aims and Objectives</h2>
+
+          <p>
+            OPEC was set up as a means to devise strategies to challenge the
+            problem being brought about by the Multinational oil companies.
+            Known as the ‘Seven sisters’, MOC used to monopolize the oil market.
+            The aims and objectives of OPEC include:
+          </p>
+
+          <ul>
+            <li>
+              To ensure price stability – In the absence of OPEC, Individual
+              Oil-producing countries in the bid to compete with each other, set
+              lower prices as well as maximize production, resulting in more
+              global demand leading to unsustainable depreciation of natural
+              resources.
+            </li>
+            <li>
+              To reduce oil price volatility – OPEC ensures that the price
+              target is being met by setting a limit and an excited target for
+              daily production to ensure that there is no fluctuations in supply
+              that could lead to volatility in oil price.
+            </li>
+            <li>
+              Adjust world oil supply – For oil shortage due to occurrences in
+              some parts of the world OPEC ensures there is increased production
+              in other parts to meet up to global energy production
+              expectations.
+            </li>
+          </ul>
+
+          <h2>Update</h2>
+
+          <p>
+            In the light of the global pandemic state of the economy in the
+            earlier months of 2020, the world experienced a general decrease in
+            Oil demand.
+          </p>
+
+          <ul>
+            <li>
+              DOC participating countries agreed to hold monthly OPEC and
+              Non-OPEC Ministerial meetings, ONOMM, to evaluate market
+              conditions and decide on production adjustments for subsequent
+              months. The 15th and most current ONOMM meeting took place via
+              video conference on the 1st of April where adjustments to
+              production levels were made and countries with overproducing
+              volumes were sanctioned. In addition, ways to reduce greenhouse
+              gas emissions were reviewed.
+            </li>
+            <li>
+              The 180th and most recent meeting of the OPEC conference on the
+              global oil demand decrease in the second wave of the pandemic and
+              the forecasted growth by 2021. OPEC also celebrated its 60th
+              Anniversary since its founding in Baghdad, 1960.
+            </li>
+          </ul>
+
+          <h2>OPEC and Canada</h2>
+
+          <p>
+            Back in 1973, when OPEC placed an embargo on oil production, it was
+            targeted towards five countries: Canada, Japan, Netherlands, United
+            Kingdom, and United States. Canada is the 4th world-largest oil
+            producer; however, the industry has suffered low oil demand due to
+            the COVID-19 pandemic. Its production costs are high, and it exports
+            majorly to the United States at a heavy discount. The Canadian
+            government is working hard to implement policies to help Oil
+            producers rise from the price fall due to the pandemic. OPEC views
+            Canada and the US in opposition to the goals of OPEC. During OPEC’s
+            recent conference, it agreed to cut its Production to 9.7 million
+            barrels per day, about 10 percent of the global oil supply. Canadian
+            oil wells, however, will be mostly shutdown despite OPEC’s deal.
+            Because Canada and other countries such as the US are struggling to
+            increase the oil supply base and OPEC is regulating production to
+            avoid excess supply and increase oil price, there exists a negative
+            relationship between the Canadian Oil Industry and OPEC.
+          </p>
+
+          <h3>Arguments in support of OPEC:</h3>
+
+          <ul>
+            <li>
+              Weak Individual policy changes – Threatening policy changes to
+              OPEC’s survival cannot hold even in the event of a change in
+              leadership because new regimes are more likely to stand by OPEC to
+              increase income rather than take short-term beneficial lone
+              actions.
+            </li>
+            <li>
+              Conservationist outlook – This development was procreated through
+              the gradual devolution of control over production policy from the
+              international oil companies to the local government. The outlook
+              is a shift from profit maximization, that is increased prices and
+              production to profit optimization, that is stabilized outputs
+              compensated by price increases.
+            </li>
+          </ul>
+
+          <footer>
+            <p>&copy; 2023 Julia Mbamarah</p>
+          </footer>
+        </div>
+      </div>
+
+      <div class="portfolio-entry" onclick="toggleContent('abstract3')">
+        <h2>Learning Theories</h2>
+        <div id="abstract3" class="abstract-content">
+          <h1>Behaviourism</h1>
+
+          <h2>Introduction</h2>
+
+          <p>
+            Behaviourism is one of the four major theories of learning,
+            propounded by John Watson in his classic paper, ‘Psychology as the
+            behaviorist view it’, which was published in 1913. It is a learning
+            theory that proposes the ideology that all behaviors are learned
+            through an interaction with the environment in a process known as
+            conditioning. It is concerned only with stimuli response that can be
+            observed and discounts any independent activities of the mind.
+            Behaviourism had evolved from the tradition of Empiricists who
+            believed in objective and verifiable data. It was the dominant
+            school of thought between the 1920’s and the mid 1950’s.
+          </p>
+
+          <h2>Strengths of Behaviourism:</h2>
+
+          <table>
+            <tr>
+              <th>Strengths</th>
+              <th>Examples</th>
+            </tr>
+            <tr>
+              <td>
+                Behaviourism is based on observable behavior; therefore it is a
+                powerful tool used in research for providing clear evidence.
+              </td>
+              <td>
+                It provides quantifiable data, clear evidence/proof, and
+                detailed explanations backed up by research.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                It is scientific and can be replicated. It uses scientific
+                research methods which can be objective, observable, and
+                quantifiable.
+              </td>
+              <td>
+                It is used for laboratory experiments, human and animal
+                conditioning.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                It is useful for behavior modification. It has therapeutic
+                techniques that can address behavioral problems in both children
+                and adults.
+              </td>
+              <td>
+                Forms of these behavioral modifications include: intense
+                behavioral intervention, discrete trial training, and behavior
+                analysis.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                It is useful in therapy, education, parenting, and childcare.
+              </td>
+              <td>
+                Examples of its applications include: token economies, aversion
+                therapy, systematic desensitization, modeling, contingency
+                management.
+              </td>
+            </tr>
+          </table>
+
+          <h2>Weaknesses of Behaviourism:</h2>
+
+          <table>
+            <tr>
+              <th>Weaknesses</th>
+              <th>Examples</th>
+            </tr>
+            <tr>
+              <td>
+                It is a one-dimensional approach. It is superficial in
+                explaining learning and behavior as it only considers what is
+                observable and measurable.
+              </td>
+              <td>It only considers stimuli from the environmental effect.</td>
+            </tr>
+            <tr>
+              <td>
+                It does not account for biological influences. Behaviourism
+                neglects the biological psychology of the human body as a key
+                determinant factor in influencing human actions.
+              </td>
+              <td>
+                Some of these neglected factors include: the power of the brain,
+                genetics, neurotransmitters, hormones.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                It is reductionist and does not consider moods, thoughts, or
+                feelings. It reduces human behavior to just memory and
+                attention.
+              </td>
+              <td>
+                Some of these neglected human behaviors include: feelings,
+                desires, thoughts, intentionality, self-reactiveness.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                It does not explain learning. It doesn’t take into account the
+                capabilities of the human full functioning.
+              </td>
+              <td>
+                These abilities include: thinking, decision making, language,
+                problem solving.
+              </td>
+            </tr>
+          </table>
+
+          <h2>Impacts of Behaviourism</h2>
+
+          <ul>
+            <li>
+              The behaviorist theory is employed even in the modern classroom.
+              Students who perform well are rewarded for their good behavior
+              through commendations, praises, and good grades. The impact this
+              application has is to make other students strive for better
+              performance. Examples of these include: rewards revisions,
+              question and answer.
+            </li>
+
+            <li>
+              In the same vein, students who do not perform well or who exhibit
+              some attributes that are considered unruly will be punished in one
+              form or another. The impact this has is to make students avoid
+              circumstances that would result in those undesirable feelings.
+              Examples of these include: scolding, detention, exclusion, and
+              sometimes even isolation.
+            </li>
+
+            <li>
+              It is employed in teaching students that the more they practice,
+              the better their performance would be, and the more praise that
+              they will receive for such high performance, in a form of
+              reinforcement. The impact this has is to make students
+              continuously repeat tasks like taking quizzes, studying to improve
+              test scores and get better grades. Examples of these include:
+              setting daily/weekly/monthly tasks, drills, quick feedbacks, start
+              of lesson routines.
+            </li>
+          </ul>
+
+          <footer>
+            <p>&copy; 2023 Julia Mbamarah</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <a href="../../pages/contact.html" class="contact-btn">Contact Me</a>
+
+    <script>
+      function toggleContent(id) {
+        const abstractContent = document.getElementById(id);
+        abstractContent.classList.toggle("show-content");
+      }
+    </script>
+  </body>
+</html>

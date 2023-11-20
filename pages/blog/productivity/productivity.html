@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../../src/global.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa; /* Light gray background color */
+        color: #343a40;
+      }
+
+      .btn {
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+        border-radius: 12px;
+        color: white;
+      }
+
+      .btn:hover {
+        background-color: white;
+        border: 1px solid var(--primary-color);
+        border-radius: 12px;
+        color: black;
+      }
+
+      /* Stylish container for blog content */
+      .blog-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff; /* White background color */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+        margin-top: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      /* Stylish card for each blog entry */
+      .blog-entry-card {
+        margin-bottom: 20px;
+      }
+
+      /* Circular blog entry image */
+      .blog-entry-image {
+        width: 100%;
+        border-radius: 8px; /* Rounded corners */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto logo">
+          <img src="../../../images/logo.svg" alt="Logo" width="100px" />
+        </div>
+
+        <div class="col">
+          <nav class="nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../../../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../../blog.html">Blogs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <h2>Productivity Blog</h2>
+    <!-- Blog container -->
+    <div class="blog-container">
+      <!-- Blog entries -->
+      <div class="row">
+        <!-- Blog Entry 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card blog-entry-card">
+            <img
+              src="../productivity/imgs/alarm.jpg"
+              alt="Blog Entry 1"
+              class="card-img-top blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                7 Tips to Help you stop procrastinating on Social media
+              </h5>
+              <p class="card-text">
+                While some people will assure you that they’ve never had to deal
+                with procrastination...
+              </p>
+              <a href="../productivity/articles/procastination.html" class="btn"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Entry 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card blog-entry-card">
+            <img
+              src="imgs/timeboxing.jpg"
+              alt="Blog Entry 2"
+              class="card-img-top blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                The Ultimate Guide to Time Boxing for Busy People
+              </h5>
+              <p class="card-text">
+                With such little time left after the daily hustling and bustling
+                of a day, work...
+              </p>
+              <a href="articles/timeboxing.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Entry 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card blog-entry-card">
+            <img
+              src="imgs/smart.jpg"
+              alt="Blog Entry 3"
+              class="card-img-top blog-entry-image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                How to Set SMART Goals: The Ultimate Guide
+              </h5>
+              <p class="card-text">
+                Permit me to say that everyone has goals. Not a lot of people
+                set these ...
+              </p>
+              <a href="articles/smartgoals.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

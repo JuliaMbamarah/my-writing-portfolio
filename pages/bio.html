@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julia Mbamarah - Bio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../src/global.css" />
+  </head>
+  <body class="bio">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto logo">
+          <img src="../images/logo.svg" alt="Logo" width="100px" />
+        </div>
+
+        <div class="col">
+          <nav class="nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="bio.html">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="books.html">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="../images/bio.jpg" alt="Bio Image" class="bio-image" />
+
+      <div class="bio-content">
+        <h2>Julia Mbamarah</h2>
+        <p>SEO Writer | Blogger | Author</p>
+
+        <p>
+          I'm an SEO writer, and I create eye-catching content that ranks well
+          on search engines. It's all about finding the perfect blend between
+          what people want to read and the keywords search engines want to see.
+        </p>
+
+        <p>
+          When it comes to blogging, you'll find me talking about all sorts of
+          things – from health, mental and physical wellbeing to my own personal
+          experiences. I try to make my posts interesting and relatable, aiming
+          to connect with a wide range of audience.
+        </p>
+
+        <p>
+          I'm also an author. I write short stories, self-help books and novels.
+          It's my way of exploring different kinds of stories and sharing my
+          thoughts on various topics.
+        </p>
+
+        <p>
+          So, whether you're looking for content that pops up on Google, a blog
+          that speaks to you, or a book to dive into, I'm your person. Join me
+          on this writing adventure!
+        </p>
+      </div>
+    </div>
+    <script>
+      function navigate(section) {
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        section.classList.add("active");
+
+        console.log(`Navigating to ${section.textContent}`);
+      }
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          navigate(this);
+        });
+      });
+    </script>
+  </body>
+</html>
